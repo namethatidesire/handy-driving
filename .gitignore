@@ -1,0 +1,33 @@
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# User-specific runtime files (regenerated on first run)
+calibration.json
+settings.json
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# MediaPipe model bundle (downloaded automatically at first run, ~8 MB)
+*.task
+
+# Windows
+Thumbs.db
+desktop.ini

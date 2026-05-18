@@ -1,0 +1,7 @@
+# Python 3.9–3.12 required — mediapipe has no Windows wheels for 3.13+.
+# On Python 3.14: install Python 3.12 from python.org and use:
+#   py -3.12 -m venv .venv && .venv\Scripts\activate
+mediapipe>=0.10.0
+opencv-python>=4.8.0
+vgamepad>=0.1.0
+numpy>=1.24.0
