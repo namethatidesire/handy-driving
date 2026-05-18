@@ -1,4 +1,5 @@
-# handy driving
+# handy-driving
+Real-time hand gesture recognition system using MediaPipe and OpenCV
 
 Control driving games with your hands in front of your webcam. Uses computer vision to track hand gestures and translate them into a virtual Xbox 360 controller.
 
@@ -11,9 +12,9 @@ Control driving games with your hands in front of your webcam. Uses computer vis
 ## Requirements
 
 - Windows 10/11
-- Python **3.9–3.12** (mediapipe has no Windows wheels for 3.13+; see note below)
+- Python **3.9–3.12** (limited by mediapipe)
 - A webcam
-- [ViGEmBus](https://github.com/nefarius/ViGEmBus/releases) kernel driver (for real controller output)
+- [ViGEmBus](https://github.com/nefarius/ViGEmBus/releases) kernel driver (for controller output)
 
 ## Setup
 
@@ -21,7 +22,7 @@ Control driving games with your hands in front of your webcam. Uses computer vis
 
 ```
 pip install -r requirements.txt
-python main.py --dry-run
+python main.py
 ```
 
 ### If you have Python 3.13+ (venv with side-by-side install)
@@ -42,10 +43,8 @@ mediapipe does not publish Windows wheels for Python 3.13+. You do **not** need 
    ```
 5. Run:
    ```
-   python main.py --dry-run
+   python main.py
    ```
-
-The `.venv` folder is isolated to this project — your system Python is unaffected.
 
 Install ViGEmBus from its [releases page](https://github.com/nefarius/ViGEmBus/releases) for real controller output. Without it the app automatically falls back to dry-run mode.
 
